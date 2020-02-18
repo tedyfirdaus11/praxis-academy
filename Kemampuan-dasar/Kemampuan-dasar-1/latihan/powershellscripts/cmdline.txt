@@ -1,0 +1,334 @@
+1. ls (list)
+
+PS C:\Users\Benyamin> ls
+
+
+    Directory: C:\Users\Benyamin
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/26/2019   9:17 PM                .android
+d-----         9/6/2019   8:57 AM                .AndroidStudio3.4
+d-r---        2/15/2020  11:56 PM                Downloads
+dst
+
+2. cd (change directory )
+
+PS C:\Users\Benyamin> cd Downloads
+PS C:\Users\Benyamin\Downloads> cd ..
+PS C:\Users\Benyamin> cd\
+PS C:\> cd D:
+PS D:\> cd E:
+PS E:\> cd D:\Kuliah
+PS D:\Kuliah>
+
+3. Copy
+
+PS D:\Kuliah\Beasiswa> copy wa.txt c:\xampp
+PS D:\Kuliah\Beasiswa> ls C:\xampp
+
+
+    Directory: C:\xampp
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/27/2019   6:17 PM                anonymous
+d-----        8/27/2019   6:18 PM                apache
+d-----        8/27/2019   6:23 PM                cgi-bin
+d-----        8/27/2019   6:17 PM                contrib
+d-----        8/27/2019   6:23 PM                FileZillaFTP
+d-----       11/11/2019  12:35 PM                htdocs
+-a----        8/27/2019   6:24 PM       12538551 uninstall.exe
+-a----         7/4/2019  11:33 PM             34 wa.txt
+-a----         6/5/2019   8:10 PM        3368448 xampp-control.exe
+-a----        8/28/2019   3:49 PM           1196 xampp-control.ini
+
+4. echo
+
+PS C:\Users\Benyamin> echo Tedy
+Tedy
+
+5. del
+
+PS C:\Users\Benyamin> cd c:\xampp
+PS C:\xampp> del wa.txt
+PS C:\xampp> ls
+
+
+    Directory: C:\xampp
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/27/2019   6:17 PM                anonymous
+d-----        8/27/2019   6:18 PM                apache
+d-----        8/27/2019   6:23 PM                cgi-bin
+d-----        8/27/2019   6:17 PM                contrib
+d-----        8/27/2019   6:23 PM                FileZillaFTP
+d-----       11/11/2019  12:35 PM                htdocs
+-a----        12/9/2016   2:40 AM           2052 test_php.bat
+-a----        8/27/2019   6:24 PM         226359 uninstall.dat
+-a----        8/27/2019   6:24 PM       12538551 uninstall.exe
+-a----         6/5/2019   8:10 PM        3368448 xampp-control.exe
+-a----        8/28/2019   3:49 PM           1196 xampp-control.ini
+
+
+6. Date
+
+PS C:\xampp> date
+
+Tuesday, February 18, 2020 7:57:18 PM
+
+7. Help / man
+
+PS C:\xampp> help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
+
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+
+ 8. Ping
+
+ PS C:\xampp> ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+PS C:\xampp> ping google.com
+
+Pinging google.com [74.125.24.139] with 32 bytes of data:
+Reply from 74.125.24.139: bytes=32 time=52ms TTL=42
+Reply from 74.125.24.139: bytes=32 time=63ms TTL=42
+Reply from 74.125.24.139: bytes=32 time=55ms TTL=42
+
+Ping statistics for 74.125.24.139:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 52ms, Maximum = 63ms, Average = 56ms
+Control-C
+
+
+9. ren and rename
+
+PS D:\kuliah\Beasiswa> ls
+
+
+    Directory: D:\kuliah\Beasiswa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         7/9/2019  11:51 PM         196339 BeasiswaPPA.rtf
+-a----         7/4/2019  11:35 PM         113061 berkas beasiswa.rtf
+-a----        7/10/2019   1:26 AM        1136212 Bukti Internasional.docx
+-a----         7/9/2019  11:55 PM         101791 Cetak Kartu Rencana Studi - Portal UAD.pdf
+-a----        7/10/2019   1:21 AM         109864 Cetak Kartu Ujian Akhir Semester - Portal
+                                                 UAD.pdf
+-a----         7/9/2019  11:55 PM         100469 Cetak Transkrip Nilai - Portal UAD.pdf
+-a----         7/4/2019  11:43 PM          43008 Surat-Rekomendasi-dari-Pimpinan-Fakultas.doc
+-a----         7/4/2019  11:33 PM             34 wa.txt
+
+PS D:\kuliah\Beasiswa> ren wa.txt nomorwa.txt
+PS D:\kuliah\Beasiswa> ls
+
+
+    Directory: D:\kuliah\Beasiswa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         7/9/2019  11:51 PM         196339 BeasiswaPPA.rtf
+-a----         7/4/2019  11:35 PM         113061 berkas beasiswa.rtf
+-a----        7/10/2019   1:26 AM        1136212 Bukti Internasional.docx
+-a----         7/9/2019  11:55 PM         101791 Cetak Kartu Rencana Studi - Portal UAD.pdf
+-a----        7/10/2019   1:21 AM         109864 Cetak Kartu Ujian Akhir Semester - Portal
+                                                 UAD.pdf
+-a----         7/9/2019  11:55 PM         100469 Cetak Transkrip Nilai - Portal UAD.pdf
+-a----         7/4/2019  11:33 PM             34 nomorwa.txt
+-a----         7/4/2019  11:43 PM          43008 Surat-Rekomendasi-dari-Pimpinan-Fakultas.doc
+
+10. Tasklist
+
+
+PS D:\kuliah\Beasiswa> Tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0      4.384 K
+Registry                        96 Services                   0     24.940 K
+smss.exe                       392 Services                   0        812 K
+csrss.exe                      640 Services                   0      4.536 K
+wininit.exe                    748 Services                   0      5.508 K
+csrss.exe                      756 Console                    1      4.740 K
+winlogon.exe                   808 Console                    1      8.500 K
+services.exe                   892 Services                   0      8.048 K
+
+
+11. Tree
+
+PS D:\kuliah\Beasiswa> tree
+Folder PATH listing for volume Tedy Firdaus
+Volume serial number is FE78-05F3
+D:.
+No subfolders exist
+
+12. Type
+
+PS D:\kuliah\Beasiswa> type nomorwa.txt
+0856-193-1960 ( beasiswa bimawa )
+PS D:\kuliah\Beasiswa>
+
+13. Ps
+
+PS D:\kuliah\Beasiswa> Ps
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    153       9     2092       6192              3716   0 AdminService
+    420      31    40728      44652      45.73   9576   1 Adobe CEF Helper
+   1103      92   188732      43960      40.64   6288   1 Adobe Desktop Service
+    256      18     5216       7192       4.31   2196   1 AdobeIPCBroker
+
+14. Pwd
+
+PS D:\kuliah\Beasiswa> pwd
+
+Path
+----
+D:\kuliah\Beasiswa
+
+14. Whoami
+
+PS D:\kuliah\Beasiswa> whoami
+desktop-krecsbi\benyamin
+
+15. taskkill
+
+PS C:\> taskkill /pid 10660
+SUCCESS: Sent termination signal to the process with PID 10660.
+
+16. mkdir / md
+
+PS C:\> cd D:
+PS D:\kuliah\Beasiswa> mkdir tedy
+
+
+    Directory: D:\kuliah\Beasiswa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        2/18/2020   8:23 PM                tedy
+
+17. rmdir / rm 
+
+PS D:\kuliah\Beasiswa> rmdir tedy
+PS D:\kuliah\Beasiswa> ls
+
+
+    Directory: D:\kuliah\Beasiswa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         7/9/2019  11:51 PM         196339 BeasiswaPPA.rtf
+-a----         7/4/2019  11:35 PM         113061 berkas beasiswa.rtf
+-a----        7/10/2019   1:26 AM        1136212 Bukti Internasional.docx
+-a----         7/9/2019  11:55 PM         101791 Cetak Kartu Rencana Studi - Portal UAD.pdf
+-a----        7/10/2019   1:21 AM         109864 Cetak Kartu Ujian Akhir Semester - Portal
+                                                 UAD.pdf
+-a----         7/9/2019  11:55 PM         100469 Cetak Transkrip Nilai - Portal UAD.pdf
+-a----         7/4/2019  11:33 PM             34 nomorwa.txt
+-a----         7/4/2019  11:43 PM          43008 Surat-Rekomendasi-dari-Pimpinan-Fakultas.doc
+
+
+18. Move 
+
+PS D:\kuliah\Beasiswa> move nomorwa.txt D:\kuliah\Beasiswa\Tedy
+PS D:\kuliah\Beasiswa> cd Tedy
+PS D:\kuliah\Beasiswa\Tedy> ls
+
+
+    Directory: D:\kuliah\Beasiswa\Tedy
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         7/4/2019  11:33 PM             34 nomorwa.txt
+
+
+19. Klist
+
+PS D:\kuliah\Beasiswa\Tedy> klist
+
+Current LogonId is 0:0x70953
+
+Cached Tickets: (0)
+
+20. Exit
+
+PS C:\Users\Benyamin> exit
+
+
+
+
+
+
+
+
