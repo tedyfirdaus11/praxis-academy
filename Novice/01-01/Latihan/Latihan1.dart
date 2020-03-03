@@ -2,21 +2,15 @@
 import 'dart:math';
 
 // Importing libraries from external packages
-import 'package:test/test.dart';
+//import "package:Latihan/Flowchart.dart";
 
 // Importing files
-import 'D:/Kuliah/Semester 6/KP/Praxis/praxis-academy/Novice/01-01/Latihan/Flowchart.dart';
+import 'dart:io';
 
 
 main() {
   print('Hello, World!');
-
-        var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
-        voyager.describe();
-
-        var voyager3 = Spacecraft.unlaunched('Voyager III');
-        voyager3.describe();
-
+  
     var name = 'Voyager I';
     var year = 1977;
     var antennaDiameter = 3.7;
@@ -65,14 +59,4 @@ main() {
         /// doc comments specially.
 
         /* Comments like these are also supported. */
-
-        class Orbiter extends Spacecraft {
-        num altitude;
-        Orbiter(String name, DateTime launchDate, this.altitude)
-            : super(name, launchDate);
-}
-
-
-
-    
 }

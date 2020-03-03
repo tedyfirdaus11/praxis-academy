@@ -1,0 +1,7 @@
+final const
+
+final >> Bisa diubah 
+const >> ( Nilai tetap )
+
+apa itu stdin ?
+res.tosring ?
