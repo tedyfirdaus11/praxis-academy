@@ -1,0 +1,4 @@
+Insert Sort
+Backward Insertion Sort
+Index equal to the value
+Maximum between given indexes
