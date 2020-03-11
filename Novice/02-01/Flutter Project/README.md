@@ -22,3 +22,10 @@ Setelah itu kita diminta untuk membuat tampilan awal Hello World di flutter sepe
 lalu jika sudah maka kita bisa lanjut untuk menyelesaikan step berikutnya dengan mengikuti tutorial yang sudah ada di Web Flutter sampai selesai.
 
 Untuk fungsi fungsi nya besok akan kita pelajari lebih lanjut tentang stuktural flutter.
+
+MyApp adalah StatelessWidget, merupakan widget induk;
+MaterialApp adalah widget yang membungkus beberapa widget yang menggunakan tema material design 1;
+Scaffold adalah widget untuk struktur dasar material design;
+AppBar adalah widget untuk membuat AppBar;
+Center adalah Widget layout untuk membuat widget ke tengah;
+Text adalah wdiget untuk membuat teks.

@@ -10,3 +10,4 @@ void main() { int x = 12; int y = 0; int z;
 
 // disini x = 12 jika dibagi 0 maka pembagian seharusnya tidak bisa dibagi, maka dari itu kita menggunakan perintah
 // try catch untuk melihat kesalahan yang terjadi pada fungsi yang dijalankan.
+// try tmpt nyimpan
