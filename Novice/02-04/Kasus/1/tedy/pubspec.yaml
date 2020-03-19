@@ -1,4 +1,4 @@
-name: latihan1hari3
+name: tedy
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -43,7 +43,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - images/tedy.jpg
-   - images/flutter.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

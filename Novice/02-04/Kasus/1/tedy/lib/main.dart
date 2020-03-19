@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Image(
-            image: AssetImage('images/flutter.png'),
+            image: AssetImage('images/tedy.jpg'),
           ),
         ),
       ),
