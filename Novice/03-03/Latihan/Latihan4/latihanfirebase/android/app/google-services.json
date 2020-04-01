@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838617067320",
+    "firebase_url": "https://praxis-136c0.firebaseio.com",
+    "project_id": "praxis-136c0",
+    "storage_bucket": "praxis-136c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838617067320:android:01a135b035b0ccfa921bcd",
+        "android_client_info": {
+          "package_name": "com.example.latihanfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838617067320-6quavb3a04idhsn5dbhepuvgihaftllu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqOLKrqzf_80GjeDdA8wp5PzgZKRP1jFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838617067320-6quavb3a04idhsn5dbhepuvgihaftllu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
